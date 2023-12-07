@@ -19,7 +19,7 @@ const Home = ({ setSelectedPage }: Props) => {
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80 md:-top-80"
           aria-hidden="true"
         ></div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto py-32 sm:py-56 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Looking for jobs available.
@@ -30,7 +30,7 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Front End Typescript Developer
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">

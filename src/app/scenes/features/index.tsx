@@ -1,8 +1,6 @@
-import Logo from "@/public/next.svg";
-
 const Features = () => {
   return (
-    <footer className="bg-secondary py-16">
+    <div className="bg-secondary py-16">
       <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
         <div className="mt-16 basis-1/2 md:mt-0">
           <img
@@ -29,7 +27,7 @@ const Features = () => {
           <p>(333)425-6825</p>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 export default Features;

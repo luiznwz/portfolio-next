@@ -1,6 +1,7 @@
 "use client";
 import Navbar from "./scenes/navbar";
 import Home from "./scenes/home";
+import Projects from "./scenes/projects";
 import Features from "./scenes/features";
 import { useState, useEffect } from "react";
 import { SelectedPage } from "@/shared/types";
@@ -24,13 +25,14 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-gray-20">
+    <div className="bg-background">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
       <Home setSelectedPage={setSelectedPage} />
+      <Projects setSelectedPage={setSelectedPage} />
       <Features />
     </div>
   );
