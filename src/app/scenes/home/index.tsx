@@ -30,20 +30,23 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl">
               Front End Typescript Developer
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+            <p className="mt-6 text-lg leading-8 text-gray-600 lg:px-32">
+              Desenvolvedor Front-end com experiência em React.js, Next.js,
+              Redux, JavaScript, TypeScript, Styled Components, Material UI e
+              consumo de APIs REST. Apaixonado pelo desenvolvimento de
+              componentes reutilizáveis. Também possui experiência em projetos
+              gerenciados por Metodologias Ágeis. Formado em Sistemas de
+              Informação e cursando
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Curriculo
+                Download CV
               </a>
               <a
                 href="#"
@@ -53,7 +56,7 @@ const Home = ({ setSelectedPage }: Props) => {
               </a>
             </div>
           </div>
-          <div className="mt-20 text-3xl flex justify-start gap-4 py-3">
+          <div className="mt-20 text-3xl flex justify-start gap-4 py-3 lg:mx-8">
             <AiFillGithub />
             <AiFillLinkedin />
           </div>

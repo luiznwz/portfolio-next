@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-background">
+    <div className="bg-background overflow-hidden">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}

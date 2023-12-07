@@ -4,9 +4,3 @@ export enum SelectedPage {
   Projects = "projects",
   ContactMe = "contactme",
 }
-
-export interface ProjectType {
-  icon: JSX.Element;
-  title: string;
-  description: string;
-}
