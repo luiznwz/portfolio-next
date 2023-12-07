@@ -42,59 +42,61 @@ function Projects({ setSelectedPage }: Props) {
               <div className="flex bg-secondary  items-center py-5 border-2  rounded-lg">
                 <img
                   src="Next.js.png"
-                  className="px-3 h-8 dark:brightness-150"
+                  className="px-2 h-8 dark:brightness-150"
                 />
-                <h4>Next.js</h4>
+                <h4 className=" text-sm leading-8 text-gray-600">Next.js</h4>
               </div>
 
               <div className="flex bg-secondary items-center py-3 border-2  rounded-lg">
                 <img
                   src="icons8-typescript-48.png"
-                  className="px-4 h-10 dark:brightness-150"
+                  className="px-2 h-10 dark:brightness-150"
                 />
-                <h4>Typescript</h4>
+                <h4 className=" text-sm leading-8 text-gray-600">Typescript</h4>
               </div>
 
               <div className="flex bg-secondary items-center py-3 border-2  rounded-lg">
                 <img
                   src="icons8-tailwindcss.png"
-                  className="px-4 h-8 dark:brightness-150"
+                  className="px-2 h-8 dark:brightness-150"
                 />
-                <h4>Tailwind CSS</h4>
+                <h4 className=" text-sm leading-8 text-gray-600">
+                  Tailwind CSS
+                </h4>
               </div>
 
               <div className="flex bg-secondary items-center py-3 border-2  rounded-lg">
                 <img
                   src="javascript.png"
-                  className="px-4 h-10 dark:brightness-150"
+                  className="px-2 h-10 dark:brightness-150"
                 />
-                <h4>Typescript</h4>
+                <h4 className=" text-sm leading-8 text-gray-600">Javascript</h4>
               </div>
               <div className="flex bg-secondary items-center py-3 border-2  rounded-lg">
                 <img
                   src="figma.png"
-                  className="px-4 h-10 dark:brightness-150"
+                  className="px-2 h-10 dark:brightness-150"
                 />
-                <h4>Figma</h4>
+                <h4 className=" text-sm leading-8 text-gray-600">Figma</h4>
               </div>
 
               <div className="flex bg-secondary items-center py-3 border-2 rounded-lg">
-                <img src="node.png" className="px-5 h-8 dark:brightness-150" />
-                <h4>Node.js</h4>
+                <img src="node.png" className="px-2 h-8 dark:brightness-150" />
+                <h4 className=" text-sm leading-8 text-gray-600">Node.js</h4>
               </div>
               <div className="flex bg-secondary items-center py-5 border-2 rounded-lg">
                 <img
                   src="react-08.png"
-                  className="px-4 h-8 dark:brightness-150"
+                  className="px-2 h-8 dark:brightness-150"
                 />
-                <h4>React</h4>
+                <h4 className=" text-sm leading-8 text-gray-600">React</h4>
               </div>
               <div className="flex bg-secondary items-center py-3 border-2 rounded-lg">
                 <img
                   src="icons8-sass-avatar-48.png"
-                  className="px-4 h-10 dark:brightness-150"
+                  className="px-2 h-10 dark:brightness-150"
                 />
-                <h4>Sass</h4>
+                <h4 className=" text-sm leading-8 text-gray-600">Sass</h4>
               </div>
             </div>
           </div>
