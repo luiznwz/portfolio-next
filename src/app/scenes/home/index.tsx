@@ -10,7 +10,7 @@ type Props = {
 
 const Home = ({ setSelectedPage }: Props) => {
   return (
-    <section id="home" className="bg-background">
+    <section id="home" className="bg-background dark:bg-neutral-900">
       <motion.div
         className="relative isolate px-6 pt-14 lg:px-8"
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
@@ -31,7 +31,7 @@ const Home = ({ setSelectedPage }: Props) => {
           }}
         >
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:text-secondary">
               Looking for jobs available.
               <a href="#" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
@@ -40,10 +40,10 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-background">
               Front End Typescript Developer
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600 lg:px-32">
+            <p className="mt-6 text-lg leading-8 text-gray-600 lg:px-32 dark:text-secondary">
               Desenvolvedor Front-end com experiência em React.js, Next.js,
               Redux, JavaScript, TypeScript, Styled Components, Material UI e
               consumo de APIs REST. Apaixonado pelo desenvolvimento de
@@ -54,12 +54,12 @@ const Home = ({ setSelectedPage }: Props) => {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:text-background"
               >
                 Download CV
               </a>
               <a
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-sm font-semibold leading-6 text-gray-900 dark:text-background"
                 onClick={() => setSelectedPage(SelectedPage.Features)}
                 href={`#${SelectedPage.Features}`}
               >
@@ -67,7 +67,7 @@ const Home = ({ setSelectedPage }: Props) => {
               </a>
             </div>
           </div>
-          <div className="mt-20 text-3xl flex justify-start gap-4 py-3 lg:mx-8">
+          <div className="mt-20 text-3xl flex justify-start gap-4 py-3 lg:mx-8 dark:text-background">
             <a href="https://github.com/luiznwz" target="_blank">
               <AiFillGithub />
             </a>
