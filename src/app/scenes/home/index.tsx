@@ -19,7 +19,17 @@ const Home = ({ setSelectedPage }: Props) => {
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80 md:-top-80"
           aria-hidden="true"
         ></div>
-        <div className="mx-auto py-32 sm:py-56 lg:py-56">
+        <motion.div
+          className="mx-auto py-32 sm:py-56 lg:py-56"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Looking for jobs available.
@@ -38,8 +48,8 @@ const Home = ({ setSelectedPage }: Props) => {
               Redux, JavaScript, TypeScript, Styled Components, Material UI e
               consumo de APIs REST. Apaixonado pelo desenvolvimento de
               componentes reutilizáveis. Também possui experiência em projetos
-              gerenciados por Metodologias Ágeis. Formado em Sistemas de
-              Informação e cursando
+              gerenciados por Metodologias Ágeis. Cursando em Ciencia da
+              Computação.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -49,18 +59,19 @@ const Home = ({ setSelectedPage }: Props) => {
                 Download CV
               </a>
               <a
-                href="#"
                 className="text-sm font-semibold leading-6 text-gray-900"
+                onClick={() => setSelectedPage(SelectedPage.Features)}
+                href={`#${SelectedPage.Features}`}
               >
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
           <div className="mt-20 text-3xl flex justify-start gap-4 py-3 lg:mx-8">
-            <AiFillGithub />
-            <AiFillLinkedin />
+            <AiFillGithub href="https://www.github.com" />
+            <AiFillLinkedin href="https://www.linkedin.com/" />
           </div>
-        </div>
+        </motion.div>
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
           aria-hidden="true"

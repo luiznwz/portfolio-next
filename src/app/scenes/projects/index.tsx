@@ -1,108 +1,110 @@
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-
-import ArrowUpRightIcon from "@heroicons/react/24/solid";
-
-const container = {
-  hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.2 },
-  },
-};
+import React from "react";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-function Projects({ setSelectedPage }: Props) {
+const Projects = ({ setSelectedPage }: Props) => {
   return (
-    <div className="mx-auto px-8 py-22">
-      <section className="mb-32 text-center md:text-left px-6">
-        <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
-          <div className="mb-6 md:mb-0">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl ">
-              Especializações <br />
-              <u className="">developer and design</u>
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600 mb-6">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
-              quas?
-            </p>
+    <section className="py-36 px-6">
+      <motion.div className="mx-auto">
+        <div className="text-center ">
+          <h1 className=" mt-6 text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            Projects
+          </h1>
+          <p className="mt-6 text-lg mb-32 leading-8 text-gray-600 lg:px-32">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            nesciunt similique inventore alias corrupti sunt blanditiis, soluta
+            laborum. Ut cum dolorum corporis reiciendis? Laboriosam ratione odit
+            quisquam eius? Laudantium, dicta!
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 px-2 mt-16 gap-4">
+            <div className="bg-gray-500">
+              <img src="gym.png" alt="" />
+            </div>
+            <div className="px-8">
+              <span className="flex justify-end mb-6 text-md font-semibold  text-gray-600">
+                Gym app
+              </span>
+              <h1 className="text-xl mb-6 font-bold tracking-tight text-gray-900 sm:text-2xl">
+                EVOGYM
+              </h1>
+              <p className="mt-6 text-md text-gray-600">
+                A página principal apresenta uma visão geral da academia,
+                destacando os serviços oferecidos, depoimentos de clientes e
+                informações de contato. Além disso, foi implementado um
+                formulário de inscrição intuitivo, aproveitando as
+                funcionalidades do React Hooks Form para gerenciar o estado e as
+                validações de forma eficaz.
+              </p>
+              <div className="flex mt-8">
+                <img src="next.js.png" className="h-8" />
+                <span className="mt-1">Next.js</span>
 
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Learn more <span aria-hidden="true">→</span>
-            </a>
-          </div>
+                <img src="next.js.png" className="h-8" />
+                <span className="mt-1">Next.js</span>
+              </div>
+              <div className="flex mt-8 gap-4">
+                <a
+                  href="https://gym-typescript-mu.vercel.app/"
+                  target="_blank"
+                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Live preview
+                </a>
+                <a
+                  className="rounded-md bg-background px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-md hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background"
+                  href="https://github.com/luiznwz/gym-typescript"
+                  target="_blank"
+                >
+                  Get this code <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+            <div className="">
+              <span className="flex justify-start mb-6 text-md font-semibold mt-20 text-gray-600 ">
+                News app
+              </span>
+              <h1 className="text-xl mb-6 font-bold tracking-tight text-gray-900 sm:text-2xl">
+                WEBPAGE
+              </h1>
+              <p className="mt-6 text-md text-gray-600">
+                A página de notícias é uma plataforma web dinâmica e responsiva,
+                construída com JavaScript para garantir uma experiência
+                interativa aos usuários com Secao de Novidades e Navegacao
+                Intuitiva . O layout moderno e estilizado foi criado utilizando
+                SCSS, proporcionando uma aparência elegante e agradável.
+              </p>
+              <div className="flex mt-8">
+                <img src="next.js.png" className="h-8" />
 
-          <div className="mb-6 md:mb-0 ">
-            <div className="grid grid-cols-1 xs:grid-cols-2 gap-2">
-              <div className="flex bg-secondary  items-center py-5 border-2  rounded-lg">
-                <img
-                  src="Next.js.png"
-                  className="px-2 h-8 dark:brightness-150"
-                />
-                <h4 className=" text-sm leading-8 text-gray-600">Next.js</h4>
+                <img src="next.js.png" className="h-8" />
               </div>
-
-              <div className="flex bg-secondary items-center py-3 border-2  rounded-lg">
-                <img
-                  src="icons8-typescript-48.png"
-                  className="px-2 h-10 dark:brightness-150"
-                />
-                <h4 className=" text-sm leading-8 text-gray-600">Typescript</h4>
+              <div className="flex mt-8 gap-4">
+                <a
+                  href="https://webpage-luiznwz.vercel.app/"
+                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Live preview
+                </a>
+                <a
+                  href="https://github.com/luiznwz/webpage"
+                  className="rounded-md bg-background px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-md hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background"
+                >
+                  Get this code <span aria-hidden="true">→</span>
+                </a>
               </div>
-
-              <div className="flex bg-secondary items-center py-3 border-2  rounded-lg">
-                <img
-                  src="icons8-tailwindcss.png"
-                  className="px-2 h-8 dark:brightness-150"
-                />
-                <h4 className=" text-sm leading-8 text-gray-600">
-                  Tailwind CSS
-                </h4>
-              </div>
-
-              <div className="flex bg-secondary items-center py-3 border-2  rounded-lg">
-                <img
-                  src="javascript.png"
-                  className="px-2 h-10 dark:brightness-150"
-                />
-                <h4 className=" text-sm leading-8 text-gray-600">Javascript</h4>
-              </div>
-              <div className="flex bg-secondary items-center py-3 border-2  rounded-lg">
-                <img
-                  src="figma.png"
-                  className="px-2 h-10 dark:brightness-150"
-                />
-                <h4 className=" text-sm leading-8 text-gray-600">Figma</h4>
-              </div>
-
-              <div className="flex bg-secondary items-center py-3 border-2 rounded-lg">
-                <img src="node.png" className="px-2 h-8 dark:brightness-150" />
-                <h4 className=" text-sm leading-8 text-gray-600">Node.js</h4>
-              </div>
-              <div className="flex bg-secondary items-center py-5 border-2 rounded-lg">
-                <img
-                  src="react-08.png"
-                  className="px-2 h-8 dark:brightness-150"
-                />
-                <h4 className=" text-sm leading-8 text-gray-600">React</h4>
-              </div>
-              <div className="flex bg-secondary items-center py-3 border-2 rounded-lg">
-                <img
-                  src="icons8-sass-avatar-48.png"
-                  className="px-2 h-10 dark:brightness-150"
-                />
-                <h4 className=" text-sm leading-8 text-gray-600">Sass</h4>
-              </div>
+            </div>
+            <div className="mt-20 bg-gray-500 ">
+              <img src="webpage.png" alt="" />
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </motion.div>
+    </section>
   );
-}
+};
+
 export default Projects;

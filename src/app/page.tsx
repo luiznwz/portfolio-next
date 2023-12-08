@@ -1,10 +1,10 @@
 "use client";
 import Navbar from "./scenes/navbar";
 import Home from "./scenes/home";
-import Projects from "./scenes/projects";
 import Features from "./scenes/features";
 import { useState, useEffect } from "react";
 import { SelectedPage } from "@/shared/types";
+import Projects from "./scenes/projects";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -25,15 +25,15 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-background overflow-hidden">
+    <div className="bg-background">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
       <Home setSelectedPage={setSelectedPage} />
+      <Features setSelectedPage={setSelectedPage} />
       <Projects setSelectedPage={setSelectedPage} />
-      <Features />
     </div>
   );
 }

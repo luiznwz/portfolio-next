@@ -17,15 +17,10 @@ const config: Config = {
         secondary: "#d0c6d2",
         accent: "#5b716f",
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       screens: {
         xs: "399px",
         sm: "640px",
-        md: "768px",
+        md: "815px",
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
