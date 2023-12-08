@@ -10,7 +10,7 @@ const Projects = ({ setSelectedPage }: Props) => {
   return (
     <section className="py-36 px-6">
       <motion.div className="mx-auto">
-        <div className="text-center ">
+        <div className="text-center  ">
           <h1 className=" mt-6 text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Projects
           </h1>
@@ -41,10 +41,10 @@ const Projects = ({ setSelectedPage }: Props) => {
               </p>
               <div className="flex mt-8">
                 <img src="next.js.png" className="h-8" />
-                <span className="mt-1">Next.js</span>
+                <span className="mt-1 text-gray-600">Next.js</span>
 
                 <img src="next.js.png" className="h-8" />
-                <span className="mt-1">Next.js</span>
+                <span className="mt-1 text-gray-600">Next.js</span>
               </div>
               <div className="flex mt-8 gap-4">
                 <a
@@ -79,8 +79,10 @@ const Projects = ({ setSelectedPage }: Props) => {
               </p>
               <div className="flex mt-8">
                 <img src="next.js.png" className="h-8" />
+                <span className="mt-1 text-gray-600">Next.js</span>
 
                 <img src="next.js.png" className="h-8" />
+                <span className="mt-1 text-gray-600">Next.js</span>
               </div>
               <div className="flex mt-8 gap-4">
                 <a

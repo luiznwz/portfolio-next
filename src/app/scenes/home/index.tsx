@@ -68,8 +68,12 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
           </div>
           <div className="mt-20 text-3xl flex justify-start gap-4 py-3 lg:mx-8">
-            <AiFillGithub href="https://www.github.com" />
-            <AiFillLinkedin href="https://www.linkedin.com/" />
+            <a href="https://github.com/luiznwz" target="_blank">
+              <AiFillGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/luizrenan/" target="_blank">
+              <AiFillLinkedin />
+            </a>
           </div>
         </motion.div>
         <div
