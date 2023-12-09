@@ -24,6 +24,11 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const [darkMode, setDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
     <div className="bg-background dark:bg-neutral-900">
       <Navbar
@@ -31,6 +36,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
+
       <Home setSelectedPage={setSelectedPage} />
       <Features setSelectedPage={setSelectedPage} />
       <Projects setSelectedPage={setSelectedPage} />

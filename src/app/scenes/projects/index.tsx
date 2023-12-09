@@ -11,27 +11,27 @@ const Projects = ({ setSelectedPage }: Props) => {
     <section className="py-36 px-6">
       <motion.div className="mx-auto">
         <div className="text-center  ">
-          <h1 className=" mt-6 text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          <h1 className=" mt-6 text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl  dark:text-background">
             Projects
           </h1>
-          <p className="mt-6 text-lg mb-32 leading-8 text-gray-600 lg:px-32">
+          <p className="mt-6 text-lg mb-32 leading-8 text-gray-600 lg:px-32  dark:text-secondary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
             nesciunt similique inventore alias corrupti sunt blanditiis, soluta
             laborum. Ut cum dolorum corporis reiciendis? Laboriosam ratione odit
             quisquam eius? Laudantium, dicta!
           </p>
-          <div className="grid grid-cols-1  lg:grid-cols-2 px-2 mt-16 gap-4">
+          <div className="grid grid-cols-1  lg:grid-cols-2 px-6 mt-16 gap-4">
             <div className="bg-cover bg-fixed">
               <img className="shadow-md" src="gym.png" alt="" />
             </div>
             <div className="px-8">
-              <span className="flex justify-end mb-6 mt-5 text-md font-semibold  text-gray-600">
+              <span className="flex justify-end mb-6 mt-5 text-md font-semibold text-gray-600 dark:text-secondary">
                 Gym app
               </span>
-              <h1 className="text-xl mb-6 font-bold tracking-tight text-gray-900 sm:text-2xl">
+              <h1 className="text-xl mb-6 font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-background">
                 EVOGYM
               </h1>
-              <p className="mt-6 text-md text-gray-600">
+              <p className="mt-6 text-md text-gray-600 dark:text-secondary">
                 A página principal apresenta uma visão geral da academia,
                 destacando os serviços oferecidos, depoimentos de clientes e
                 informações de contato. Além disso, foi implementado um
@@ -63,7 +63,9 @@ const Projects = ({ setSelectedPage }: Props) => {
                   ></ellipse>
                   <circle cx="16" cy="16" r="2"></circle>
                 </svg>
-                <span className="ml-2.5 text-gray-600 mr-8">React</span>
+                <span className="ml-2.5 text-gray-600 mr-8 dark:text-secondary">
+                  React
+                </span>
 
                 <svg
                   fill="none"
@@ -116,7 +118,9 @@ const Projects = ({ setSelectedPage }: Props) => {
                     stroke-width="0"
                   ></path>
                 </svg>
-                <span className="ml-2.5 text-gray-600">Next.js</span>
+                <span className="ml-2.5 text-gray-600 dark:text-secondary">
+                  Next.js
+                </span>
               </div>
               <div className="flex mt-8 gap-4">
                 <a
@@ -139,13 +143,13 @@ const Projects = ({ setSelectedPage }: Props) => {
               <img src="webpage.png" alt="" />
             </div>
             <div className="px-8">
-              <span className="flex justify-end mb-6 mt-5 text-md font-semibold lg:mt-20 text-gray-600 ">
+              <span className="flex justify-end mb-6 mt-5 text-md font-semibold lg:mt-20 text-gray-600 dark:text-secondary ">
                 News app
               </span>
-              <h1 className="text-xl mb-6 font-bold tracking-tight text-gray-900 sm:text-2xl">
+              <h1 className="text-xl mb-6 font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-background">
                 WEBPAGE
               </h1>
-              <p className="mt-6 text-md text-gray-600">
+              <p className="mt-6 text-md text-gray-600 dark:text-secondary">
                 A página de notícias é uma plataforma web dinâmica e responsiva,
                 construída com JavaScript para garantir uma experiência
                 interativa aos usuários com Secao de Novidades e Navegacao
@@ -176,7 +180,9 @@ const Projects = ({ setSelectedPage }: Props) => {
                   ></ellipse>
                   <circle cx="16" cy="16" r="2"></circle>
                 </svg>
-                <span className="ml-2.5 mr-8 text-gray-600">React</span>
+                <span className="ml-2.5 mr-8 text-gray-600 dark:text-background">
+                  React
+                </span>
 
                 <svg
                   fill="none"
@@ -229,7 +235,9 @@ const Projects = ({ setSelectedPage }: Props) => {
                     stroke-width="0"
                   ></path>
                 </svg>
-                <span className="ml-2.5 text-gray-600">Next.js</span>
+                <span className="ml-2.5 text-gray-600 dark:text-background">
+                  Next.js
+                </span>
               </div>
               <div className="flex mt-8 gap-4">
                 <a

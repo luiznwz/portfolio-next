@@ -3,6 +3,7 @@ import { SelectedPage } from "@/shared/types";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 type Props = {
   isTopOfPage: boolean;
@@ -23,8 +24,18 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
     ? ""
     : "bg-background drop-shadow dark:bg-neutral-900";
 
+  const [darkMode, setDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <header className={`${navbarBackground} fixed inset-x-0 top-0 z-50`}>
+    <header
+      id="theme-toggle"
+      className={`${navbarBackground} ${
+        darkMode && "dark"
+      } fixed inset-x-0 top-0 z-50`}
+    >
       <nav
         className="flex items-center justify-between px-6 py-6 sm:py-6 lg:px-8 "
         aria-label="Global"
@@ -63,10 +74,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             </a>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end ">
+          <ThemeToggle />
         </div>
       </nav>
       <Dialog
