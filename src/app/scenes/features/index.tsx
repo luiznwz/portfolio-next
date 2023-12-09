@@ -18,7 +18,7 @@ function Features({ setSelectedPage }: Props) {
   return (
     <motion.div
       id="features"
-      className="mx-auto px-6 py-22 2xl:py-33"
+      className="mx-auto px-6 py-22"
       onViewportEnter={() => setSelectedPage(SelectedPage.Features)}
     >
       <section className="mb-32 text-center md:text-left px-6">
@@ -57,7 +57,7 @@ function Features({ setSelectedPage }: Props) {
               <a
                 href="https://nextjs.org/"
                 target="_blank"
-                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background dark:text-background dark:bg-neutral-900"
+                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background dark:text-background dark:bg-neutral-900 dark:hover:bg-neutral-800"
               >
                 <svg
                   fill="none"
@@ -76,7 +76,7 @@ function Features({ setSelectedPage }: Props) {
               <a
                 href="https://www.typescriptlang.org/"
                 target="_blank"
-                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900"
+                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900 dark:hover:bg-neutral-800"
               >
                 <svg
                   fill="none"
@@ -135,7 +135,7 @@ function Features({ setSelectedPage }: Props) {
               <a
                 href="https://tailwindcss.com/"
                 target="_blank"
-                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900"
+                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900 dark:hover:bg-neutral-800"
               >
                 <img
                   src="icons8-tailwindcss.png"
@@ -147,7 +147,7 @@ function Features({ setSelectedPage }: Props) {
               <a
                 href="#"
                 target="_blank"
-                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900"
+                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900 dark:hover:bg-neutral-800"
               >
                 <img
                   src="javascript.png"
@@ -158,7 +158,7 @@ function Features({ setSelectedPage }: Props) {
               <a
                 href="https://www.figma.com/login"
                 target="_blank"
-                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900"
+                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900 dark:hover:bg-neutral-800"
               >
                 <img
                   src="figma.png"
@@ -170,7 +170,7 @@ function Features({ setSelectedPage }: Props) {
               <a
                 href="https://nodejs.org/en"
                 target="_blank"
-                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900"
+                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900 dark:hover:bg-neutral-800"
               >
                 <img src="node.png" className="px-2 h-8 dark:brightness-150" />
                 Node.js
@@ -178,7 +178,7 @@ function Features({ setSelectedPage }: Props) {
               <a
                 href="https://pt-br.react.dev/"
                 target="_blank"
-                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900"
+                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900 dark:hover:bg-neutral-800"
               >
                 <svg
                   fill="none"
@@ -208,7 +208,7 @@ function Features({ setSelectedPage }: Props) {
               <a
                 href="https://sass-lang.com/"
                 target="_blank"
-                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-md hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900"
+                className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-md hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900 dark:hover:bg-neutral-800"
               >
                 <img
                   src="icons8-sass-avatar-48.png"

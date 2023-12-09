@@ -25,8 +25,8 @@ const Projects = ({ setSelectedPage }: Props) => {
               <img className="shadow-md" src="gym.png" alt="" />
             </div>
             <div className="px-8">
-              <span className="flex justify-end mb-6 mt-5 text-md font-semibold text-gray-600 dark:text-secondary">
-                Gym app
+              <span className="flex justify-end mb-6 mt-5 text-md text-gray-600 dark:text-secondary">
+                GYM APP
               </span>
               <h1 className="text-xl mb-6 font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-background">
                 EVOGYM
@@ -143,8 +143,8 @@ const Projects = ({ setSelectedPage }: Props) => {
               <img src="webpage.png" alt="" />
             </div>
             <div className="px-8">
-              <span className="flex justify-end mb-6 mt-5 text-md font-semibold lg:mt-20 text-gray-600 dark:text-secondary ">
-                News app
+              <span className="flex justify-end mb-6 mt-5 text-md lg:mt-20 text-gray-600 dark:text-secondary ">
+                NEWS APP
               </span>
               <h1 className="text-xl mb-6 font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-background">
                 WEBPAGE
