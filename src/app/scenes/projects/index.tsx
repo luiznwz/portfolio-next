@@ -9,12 +9,15 @@ type Props = {
 const Projects = ({ setSelectedPage }: Props) => {
   return (
     <section className="py-36 px-6">
-      <motion.div className="mx-auto">
+      <motion.div
+        className="mx-auto"
+        onViewportEnter={() => setSelectedPage(SelectedPage.Projects)}
+      >
         <div className="text-center  ">
           <h1 className=" mt-6 text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl  dark:text-background">
             Projects
           </h1>
-          <p className="mt-6 text-lg mb-32 leading-8 text-gray-600 lg:px-32  dark:text-secondary">
+          <p className="mt-6 text-lg mb-32 leading-8 text-gray-600 lg:px-36  dark:text-secondary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
             nesciunt similique inventore alias corrupti sunt blanditiis, soluta
             laborum. Ut cum dolorum corporis reiciendis? Laboriosam ratione odit
@@ -22,16 +25,17 @@ const Projects = ({ setSelectedPage }: Props) => {
           </p>
           <div className="grid grid-cols-1  lg:grid-cols-2 px-6 mt-16 gap-4">
             <div className="bg-cover bg-fixed">
-              <img className="shadow-md" src="gym.png" alt="" />
+              <img
+                className="border-6 rounded-md border-4 border-black"
+                src="gym.png"
+                alt=""
+              />
             </div>
-            <div className="px-8">
-              <span className="flex justify-end mb-6 mt-5 text-md text-gray-600 dark:text-secondary">
-                GYM APP
-              </span>
-              <h1 className="text-xl mb-6 font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-background">
+            <div className="">
+              <h1 className="text-xl mt-4 mb-6 font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-background">
                 EVOGYM
               </h1>
-              <p className="mt-6 text-md text-gray-600 dark:text-secondary">
+              <p className="mt-6 text-lg leading-8 text-gray-600  dark:text-secondary">
                 A página principal apresenta uma visão geral da academia,
                 destacando os serviços oferecidos, depoimentos de clientes e
                 informações de contato. Além disso, foi implementado um
@@ -142,14 +146,11 @@ const Projects = ({ setSelectedPage }: Props) => {
             <div className="mt-20 ">
               <img src="webpage.png" alt="" />
             </div>
-            <div className="px-8">
-              <span className="flex justify-end mb-6 mt-5 text-md lg:mt-20 text-gray-600 dark:text-secondary ">
-                NEWS APP
-              </span>
+            <div className="mt-20">
               <h1 className="text-xl mb-6 font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-background">
                 WEBPAGE
               </h1>
-              <p className="mt-6 text-md text-gray-600 dark:text-secondary">
+              <p className="mt-6 text-lg leading-8 text-gray-600  dark:text-secondary">
                 A página de notícias é uma plataforma web dinâmica e responsiva,
                 construída com JavaScript para garantir uma experiência
                 interativa aos usuários com Secao de Novidades e Navegacao

@@ -21,7 +21,10 @@ function Features({ setSelectedPage }: Props) {
       className="mx-auto px-6 py-22"
       onViewportEnter={() => setSelectedPage(SelectedPage.Features)}
     >
-      <section className="mb-32 text-center md:text-left px-6">
+      <section
+        id="page2"
+        className="w-auto mb-32 text-center md:text-left px-6"
+      >
         <motion.div
           className="grid gap-6 grid-cols-1 md:grid-cols-2"
           initial="hidden"
@@ -137,11 +140,58 @@ function Features({ setSelectedPage }: Props) {
                 target="_blank"
                 className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900 dark:hover:bg-neutral-800"
               >
-                <img
-                  src="icons8-tailwindcss.png"
-                  className="px-2 h-8 dark:brightness-150"
-                />
-                Tailwind CSS
+                <svg
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8 flex-none stroke-current text-slate-400"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <defs>
+                    <linearGradient
+                      id="next-icon-gradient-a"
+                      x1="15.125"
+                      y1="18.25"
+                      x2="24.25"
+                      y2="27.375"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset=".24" stop-color="currentColor"></stop>
+                      <stop
+                        offset="1"
+                        stop-color="currentColor"
+                        stop-opacity="0"
+                      ></stop>
+                    </linearGradient>
+                    <linearGradient
+                      id="next-icon-gradient-b"
+                      x1="20.5"
+                      y1="11.25"
+                      x2="20.5"
+                      y2="18.25"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="currentColor"></stop>
+                      <stop
+                        offset="1"
+                        stop-color="currentColor"
+                        stop-opacity="0"
+                      ></stop>
+                    </linearGradient>
+                  </defs>
+                  <path d="M16.25 28.5c6.765 0 12.25-5.485 12.25-12.25S23.015 4 16.25 4 4 9.485 4 16.25 9.485 28.5 16.25 28.5Z"></path>
+                  <path
+                    d="M12 21.5V12l12.25 14.25"
+                    stroke="url(#next-icon-gradient-a)"
+                  ></path>
+                  <path
+                    d="M21.25 12a.75.75 0 1 0-1.5 0v8.17l1.5 1.64V12Z"
+                    fill="url(#next-icon-gradient-b)"
+                    stroke-width="0"
+                  ></path>
+                </svg>
+                <span className="ml-2.5">Tailwind CSS</span>
               </a>
 
               <a
@@ -149,22 +199,116 @@ function Features({ setSelectedPage }: Props) {
                 target="_blank"
                 className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900 dark:hover:bg-neutral-800"
               >
-                <img
-                  src="javascript.png"
-                  className="px-2 h-10 dark:brightness-150"
-                />
-                Javascript
+                <svg
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8 flex-none stroke-current text-slate-400"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <defs>
+                    <linearGradient
+                      id="next-icon-gradient-a"
+                      x1="15.125"
+                      y1="18.25"
+                      x2="24.25"
+                      y2="27.375"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset=".24" stop-color="currentColor"></stop>
+                      <stop
+                        offset="1"
+                        stop-color="currentColor"
+                        stop-opacity="0"
+                      ></stop>
+                    </linearGradient>
+                    <linearGradient
+                      id="next-icon-gradient-b"
+                      x1="20.5"
+                      y1="11.25"
+                      x2="20.5"
+                      y2="18.25"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="currentColor"></stop>
+                      <stop
+                        offset="1"
+                        stop-color="currentColor"
+                        stop-opacity="0"
+                      ></stop>
+                    </linearGradient>
+                  </defs>
+                  <path d="M16.25 28.5c6.765 0 12.25-5.485 12.25-12.25S23.015 4 16.25 4 4 9.485 4 16.25 9.485 28.5 16.25 28.5Z"></path>
+                  <path
+                    d="M12 21.5V12l12.25 14.25"
+                    stroke="url(#next-icon-gradient-a)"
+                  ></path>
+                  <path
+                    d="M21.25 12a.75.75 0 1 0-1.5 0v8.17l1.5 1.64V12Z"
+                    fill="url(#next-icon-gradient-b)"
+                    stroke-width="0"
+                  ></path>
+                </svg>
+                <span className="ml-2.5">Javascript</span>
               </a>
               <a
                 href="https://www.figma.com/login"
                 target="_blank"
                 className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900 dark:hover:bg-neutral-800"
               >
-                <img
-                  src="figma.png"
-                  className="px-2 h-10 dark:brightness-150"
-                />
-                Figma
+                <svg
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8 flex-none stroke-current text-slate-400"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <defs>
+                    <linearGradient
+                      id="next-icon-gradient-a"
+                      x1="15.125"
+                      y1="18.25"
+                      x2="24.25"
+                      y2="27.375"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset=".24" stop-color="currentColor"></stop>
+                      <stop
+                        offset="1"
+                        stop-color="currentColor"
+                        stop-opacity="0"
+                      ></stop>
+                    </linearGradient>
+                    <linearGradient
+                      id="next-icon-gradient-b"
+                      x1="20.5"
+                      y1="11.25"
+                      x2="20.5"
+                      y2="18.25"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="currentColor"></stop>
+                      <stop
+                        offset="1"
+                        stop-color="currentColor"
+                        stop-opacity="0"
+                      ></stop>
+                    </linearGradient>
+                  </defs>
+                  <path d="M16.25 28.5c6.765 0 12.25-5.485 12.25-12.25S23.015 4 16.25 4 4 9.485 4 16.25 9.485 28.5 16.25 28.5Z"></path>
+                  <path
+                    d="M12 21.5V12l12.25 14.25"
+                    stroke="url(#next-icon-gradient-a)"
+                  ></path>
+                  <path
+                    d="M21.25 12a.75.75 0 1 0-1.5 0v8.17l1.5 1.64V12Z"
+                    fill="url(#next-icon-gradient-b)"
+                    stroke-width="0"
+                  ></path>
+                </svg>
+                <span className="ml-2.5">Figma</span>
               </a>
 
               <a
@@ -172,8 +316,30 @@ function Features({ setSelectedPage }: Props) {
                 target="_blank"
                 className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-lg hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900 dark:hover:bg-neutral-800"
               >
-                <img src="node.png" className="px-2 h-8 dark:brightness-150" />
-                Node.js
+                <svg
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8 flex-none stroke-current text-slate-400"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <ellipse cx="16" cy="16" rx="13" ry="5"></ellipse>
+                  <ellipse
+                    cx="16"
+                    cy="16"
+                    rx="13"
+                    ry="5"
+                    transform="rotate(60 16 16)"
+                  ></ellipse>
+                  <ellipse
+                    rx="13"
+                    ry="5"
+                    transform="matrix(-.5 .86603 .86603 .5 16 16)"
+                  ></ellipse>
+                  <circle cx="16" cy="16" r="2"></circle>
+                </svg>
+                <span className="ml-2.5">Node</span>
               </a>
               <a
                 href="https://pt-br.react.dev/"
@@ -210,11 +376,30 @@ function Features({ setSelectedPage }: Props) {
                 target="_blank"
                 className="flex bg-background  items-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-md hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-background  dark:text-background dark:bg-neutral-900 dark:hover:bg-neutral-800"
               >
-                <img
-                  src="icons8-sass-avatar-48.png"
-                  className="px-2 h-10 dark:brightness-150"
-                />
-                Sass
+                <svg
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8 flex-none stroke-current text-slate-400"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <ellipse cx="16" cy="16" rx="13" ry="5"></ellipse>
+                  <ellipse
+                    cx="16"
+                    cy="16"
+                    rx="13"
+                    ry="5"
+                    transform="rotate(60 16 16)"
+                  ></ellipse>
+                  <ellipse
+                    rx="13"
+                    ry="5"
+                    transform="matrix(-.5 .86603 .86603 .5 16 16)"
+                  ></ellipse>
+                  <circle cx="16" cy="16" r="2"></circle>
+                </svg>
+                <span className="ml-2.5">Sass</span>
               </a>
             </div>
           </div>
